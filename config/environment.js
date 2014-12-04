@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'firebase-chat',
     environment: environment,
-    myFirebase: '',
+    myFirebase: 'torid-heat-5735',
     baseURL: '/',
     locationType: 'auto',
     contentSecurityPolicy: {
