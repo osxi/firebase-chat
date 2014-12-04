@@ -1,0 +1,29 @@
+Status: {{connectionStatus}}
+
+<h3>Chat</h3>
+
+<dl class="dl-horizontal">
+  {{#each message in model}}
+    <dt><strong>{{message.user}}:</strong></dt>
+    <dd>{{message.body}}</dd>
+  {{else}}
+    <dt>Nothing has been said.</dt>
+  {{/each}}
+</dl>
+
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="user" class="col-sm-1 control-label">User:</label>
+    <div class="col-xs-11">
+      {{input value=currentUser action='setUser' placeholder=user class='form-control' id='user'}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="message" class="col-sm-1 control-label">Message:</label>
+    <div class="col-xs-11">
+      {{input action='submitMessage' placeholder='Say something...' class='form-control' id='message'}}
+    </div>
+  </div>
+</form>
+
+{{outlet}}

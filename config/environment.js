@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     environment: environment,
     baseURL: '/',
+    myFirebase: '',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
