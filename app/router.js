@@ -1,7 +1,8 @@
 import Ember from 'ember';
+import ENV from 'firebase-chat/config/environment';
 
 var Router = Ember.Router.extend({
-  location: FirebaseChatENV.locationType
+  location: ENV.locationType
 });
 
 Router.map(function() {
